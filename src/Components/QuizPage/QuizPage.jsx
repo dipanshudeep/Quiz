@@ -74,12 +74,12 @@ function QuizPage() {
   };
 
   return (
-    <div className="h-screen bg-gray-800 text-white p-8 bg-gradient-to-br from-[#172A45] to-[#0A192F]">
-      <div className="bg-gray-800 h-5/6 p-6 text-2xl rounded-xl border border-cyan-500 shadow-md text-white text-center">
+    <div className="min-h-screen bg-gray-800 text-white p-2 md:p-8 bg-gradient-to-br from-[#172A45] to-[#0A192F] flex items-center justify-center">
+      <div className="bg-gray-800 w-full max-w-2xl h-auto md:h-5/6 p-2 md:p-6 text-lg md:text-2xl rounded-xl border border-cyan-500 shadow-md text-white text-center">
         
         {/* Display Current Question */}
-        <div className="bg-gray-800 flex p-6 mb-10 rounded-xl border border-cyan-500 shadow-md text-white text-center">
-        <div className="px-11">{'Q'+num}</div><div>{currentQuestion?.question}</div>
+        <div className="bg-gray-800 flex flex-col md:flex-row p-4 md:p-6 mb-6 md:mb-10 rounded-xl border border-cyan-500 shadow-md text-white text-center">
+        <div className="px-4 md:px-11">{'Q'+num}</div><div>{currentQuestion?.question}</div>
           
         </div>
 
@@ -87,19 +87,19 @@ function QuizPage() {
         {currentQuestion?.options.map((option, idx) => (
           <div
             key={idx}
-            className={`p-5 mb-5 text-2xl flex rounded-xl border border-cyan-500 shadow-md text-white text-center cursor-pointer hover:shadow-blue-500 transition-all duration-300 
+            className={`p-3 md:p-5 mb-3 md:mb-5 text-lg md:text-2xl flex rounded-xl border border-cyan-500 shadow-md text-white text-center cursor-pointer hover:shadow-blue-500 transition-all duration-300 
               ${selectedAnswers[questionIndex] === option ? "bg-blue-500" : "bg-gray-800"}`}
             onClick={() => getAnswer(option)}
           >
-           <div className="px-12">{options[idx]}</div> <div>{option}</div>
+           <div className="px-4 md:px-12">{options[idx]}</div> <div>{option}</div>
           </div>
         ))}
 
         {/* Navigation Buttons */}
-        <div className="flex justify-between mt-4">
+        <div className="flex flex-col md:flex-row justify-between mt-4 gap-2">
           <button
             onClick={prev}
-            className="mt-4 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition-all duration-300"
+            className="mt-2 md:mt-4 px-4 md:px-6 py-2 md:py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition-all duration-300"
             disabled={questionIndex === 0}
           >
             Prev
@@ -108,14 +108,14 @@ function QuizPage() {
           {questionIndex === finalData.length - 1 ? (
             <button
               onClick={submitQuiz}
-              className="mt-4 px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-500 transition-all duration-300"
+              className="mt-2 md:mt-4 px-4 md:px-6 py-2 md:py-3 bg-green-600 text-white rounded-lg hover:bg-green-500 transition-all duration-300"
             >
               Submit Quiz
             </button>
           ) : (
             <button
               onClick={next}
-              className="mt-4 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition-all duration-300"
+              className="mt-2 md:mt-4 px-4 md:px-6 py-2 md:py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition-all duration-300"
             >
               Next
             </button>
@@ -124,7 +124,7 @@ function QuizPage() {
 
         {/* Display Score After Submission */}
         {score !== null && (
-          <div className="text-4xl font-bold text-green-400 mt-6">
+          <div className="text-2xl md:text-4xl font-bold text-green-400 mt-6">
             🎉 Your Score: {score} / {finalData.length}
           </div>
         )}

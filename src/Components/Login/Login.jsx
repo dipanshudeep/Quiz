@@ -4,8 +4,8 @@ function Login() {
   return (
     <>
      <div className="bg-gradient-to-br from-[#09203F] to-[#537895] min-h-screen flex items-center justify-center">
-     <div className="bg-gray-800 p-8 rounded-xl shadow-lg w-96 text-white">
-  <h2 className="text-3xl font-bold text-cyan-400 text-center">Login</h2>
+     <div className="bg-gray-800 p-4 md:p-8 rounded-xl shadow-lg w-full max-w-xs md:max-w-md text-white">
+  <h2 className="text-2xl md:text-3xl font-bold text-cyan-400 text-center">Login</h2>
   <form className="mt-6 space-y-4">
   <div className="relative">
   <input type="email" id="email" className="peer w-full p-3 rounded-md bg-gray-700 text-white" placeholder=" " />

@@ -4,12 +4,12 @@ function Contact() {
   return (
     <>
      <div className="bg-gradient-to-br from-[#09203F] to-[#537895] min-h-screen flex items-center justify-center">
-     <div className="bg-gray-800 p-8 rounded-xl shadow-lg w-3/4 text-white">
-  <h2 className="text-3xl font-bold text-cyan-400 text-center">Get in Touch</h2>
+     <div className="bg-gray-800 p-4 md:p-8 rounded-xl shadow-lg w-full max-w-lg text-white">
+  <h2 className="text-2xl md:text-3xl font-bold text-cyan-400 text-center">Get in Touch</h2>
   <form className="mt-6 space-y-4">
     <input type="text" placeholder="Your Name" className="w-full p-3 rounded-md bg-gray-700 text-white" />
     <input type="email" placeholder="Your Email" className="w-full p-3 rounded-md bg-gray-700 text-white" />
-    <textarea placeholder="Your Message" className="w-full p-3 rounded-md bg-gray-700 text-white h-32"></textarea>
+    <textarea placeholder="Your Message" className="w-full p-3 rounded-md bg-gray-700 text-white h-24 md:h-32"></textarea>
     <button type="submit" className="w-full bg-gradient-to-r from-pink-500 to-pink-700 text-white py-3 rounded-lg hover:from-pink-600 hover:to-pink-800 transition-all duration-300">
       Send Message
     </button>
@@ -22,7 +22,6 @@ function Contact() {
 </div>
   </form>
 </div>
-
 </div>
 
 
