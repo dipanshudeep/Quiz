@@ -148,7 +148,7 @@ const DataContextProvider = ({children})=>{
 { "topic": "MongoDB", "level": "Easy", "question": "Which method is used to find documents in MongoDB?", "options": ["find()", "search()", "select()", "lookup()"], "answer": "find()" },
 { "topic": "MongoDB", "level": "Easy", "question": "Which command lists all collections in the current database?", "options": ["show collections", "list collections", "db.showCollections()", "collections.list()"], "answer": "show collections" },
 { "topic": "MongoDB", "level": "Easy", "question": "Does MongoDB support schema-less structure?", "options": ["Yes", "No"], "answer": "Yes" },
-{ "topic": "MongoDB", "level": "Easy", "question": "Which data format is similar to BSON?", "options": ["CSV", "JSON", "HTML", "XML"], "answer": "JSON" }
+{ "topic": "MongoDB", "level": "Easy", "question": "Which data format is similar to BSON?", "options": ["CSV", "JSON", "HTML", "XML"], "answer": "JSON" },
 
 
 { "topic": "MongoDB", "level": "Medium", "question": "Which operator is used in MongoDB to match a field to multiple values?", "options": ["$eq", "$in", "$or", "$all"], "answer": "$in" },
@@ -165,7 +165,7 @@ const DataContextProvider = ({children})=>{
 { "topic": "MongoDB", "level": "Medium", "question": "Which method updates multiple documents in MongoDB?", "options": ["update()", "updateOne()", "updateMany()", "modify()"], "answer": "updateMany()" },
 { "topic": "MongoDB", "level": "Medium", "question": "Which method removes all documents from a collection?", "options": ["removeAll()", "drop()", "delete()", "deleteMany({})"], "answer": "deleteMany({})" },
 { "topic": "MongoDB", "level": "Medium", "question": "How can you sort query results in MongoDB?", "options": ["order()", "db.sort()", "sort()", "orderBy()"], "answer": "sort()" },
-{ "topic": "MongoDB", "level": "Medium", "question": "What is the use of `$project` in aggregation?", "options": ["Match documents", "Create indexes", "Include/exclude fields", "Group documents"], "answer": "Include/exclude fields" }
+{ "topic": "MongoDB", "level": "Medium", "question": "What is the use of `$project` in aggregation?", "options": ["Match documents", "Create indexes", "Include/exclude fields", "Group documents"], "answer": "Include/exclude fields" },
 
 
 { "topic": "MongoDB", "level": "Hard", "question": "Which type of index supports full-text search in MongoDB?", "options": ["Hashed index", "Wildcard index", "Text index", "Compound index"], "answer": "Text index" },
@@ -182,7 +182,7 @@ const DataContextProvider = ({children})=>{
 { "topic": "MongoDB", "level": "Hard", "question": "What does `db.currentOp()` return?", "options": ["Database stats", "Active operations", "List of indexes", "Shard keys"], "answer": "Active operations" },
 { "topic": "MongoDB", "level": "Hard", "question": "What is the function of the `writeConcern` option?", "options": ["Control read consistency", "Specify index types", "Control acknowledgment of write operations", "Set query limits"], "answer": "Control acknowledgment of write operations" },
 { "topic": "MongoDB", "level": "Hard", "question": "How can you prevent a field from being returned in a query?", "options": ["project({_id: 0})", "select(exclude)", "unset()", "filter()"], "answer": "project({_id: 0})" },
-{ "topic": "MongoDB", "level": "Hard", "question": "What does `$merge` do in MongoDB aggregation?", "options": ["Combines documents", "Joins collections", "Writes aggregation results into a collection", "Sorts by multiple fields"], "answer": "Writes aggregation results into a collection" }
+{ "topic": "MongoDB", "level": "Hard", "question": "What does `$merge` do in MongoDB aggregation?", "options": ["Combines documents", "Joins collections", "Writes aggregation results into a collection", "Sorts by multiple fields"], "answer": "Writes aggregation results into a collection" },
 
  
  ]
